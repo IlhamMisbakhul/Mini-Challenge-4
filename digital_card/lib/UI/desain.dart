@@ -77,8 +77,8 @@ class _HomeState extends State<Home> {
                   SizedBox(height: 10,),
                   Expanded(
                     child: Container(
-                      width: 200,
-                      height: 200,
+                      width: constraints.maxWidth * 0.3,
+                      height: constraints.maxHeight * 0.2,
                       decoration: const BoxDecoration(
                         image: DecorationImage(image: AssetImage('image/QRCode.png'))
                       ),
