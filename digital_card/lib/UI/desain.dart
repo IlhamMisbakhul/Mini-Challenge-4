@@ -36,7 +36,7 @@ class _HomeState extends State<Home> {
                       image: DecorationImage(image: AssetImage('image/Foto.png'))
                     ),
                   ),
-                  SizedBox(height: 10,),
+                  const SizedBox(height: 10,),
                   Center(
                     child: Expanded(
                       child: Column(
@@ -49,21 +49,21 @@ class _HomeState extends State<Home> {
                             fontSize: 20
                           ),
                           textAlign: TextAlign.start,),
-                          SizedBox(height: 15,),
+                          const SizedBox(height: 15,),
                           Text('Mahasiswa',
                           style: GoogleFonts.poppins(
                             fontWeight: FontWeight.normal,
                             fontSize: 20
                           ),
                           textAlign: TextAlign.start,),
-                          SizedBox(height: 15,),
+                          const SizedBox(height: 15,),
                           Text('085171224653',
                           style: GoogleFonts.poppins(
                             fontWeight: FontWeight.normal,
                             fontSize: 20
                           ),
                           textAlign: TextAlign.start,),
-                          SizedBox(height: 15,),
+                          const SizedBox(height: 15,),
                           Text('ilhammisbakhul123@gmail.com',
                           style: GoogleFonts.poppins(
                             fontWeight: FontWeight.normal,
@@ -74,90 +74,93 @@ class _HomeState extends State<Home> {
                       ),
                     ),
                   ),
-                  SizedBox(height: 10,),
+                  const SizedBox(height: 10,),
                   Expanded(
                     child: Container(
-                      width: constraints.maxWidth * 0.3,
-                      height: constraints.maxHeight * 0.2,
+                      width: 400,
+                      height: 400,
                       decoration: const BoxDecoration(
                         image: DecorationImage(image: AssetImage('image/QRCode.png'))
                       ),
                     ),
                   ),
                 ],
-              );
+                              );
               }else{
-                return Row( 
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                  Container(
-                    width: constraints.maxWidth * 0.2,
-                    height: 277,
-                    decoration: const BoxDecoration(
-                      shape: BoxShape.circle,
-                      image: DecorationImage(image: AssetImage('image/Foto.png'))
-                    ),
-                  ),
-                  SizedBox(width: constraints.maxWidth  * 0.05,),
-                  Center(
-                    child: Expanded(
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text('DIGITAL CARD',
-                          style: GoogleFonts.poppins(
-                            fontWeight: FontWeight.bold,
-                            fontSize: constraints.maxWidth * 0.03
-                          )),
-                          SizedBox(height: 25,),
-                          Text('Nama : Muhammad Ilham Misbakhul Anwar',
-                          style: GoogleFonts.poppins(
-                            fontWeight: FontWeight.normal,
-                            fontSize: constraints.maxWidth * 0.02
-                          ),
-                          textAlign: TextAlign.start,),
-                          SizedBox(height: 15,),
-                          Text('Jabatan : Mahasiswa',
-                          style: GoogleFonts.poppins(
-                            fontWeight: FontWeight.normal,
-                            fontSize: constraints.maxWidth * 0.02
-                          ),
-                          textAlign: TextAlign.start,),
-                          SizedBox(height: 15,),
-                          Text('No. HP : 085171224653',
-                          style: GoogleFonts.poppins(
-                            fontWeight: FontWeight.normal,
-                            fontSize: constraints.maxWidth * 0.02
-                          ),
-                          textAlign: TextAlign.start,),
-                          SizedBox(height: 15,),
-                          Text('Email : ilhammisbakhul123@gmail.com',
-                          style: GoogleFonts.poppins(
-                            fontWeight: FontWeight.normal,
-                            fontSize: constraints.maxWidth * 0.02
-                          ),
-                          textAlign: TextAlign.start,),
-                          
-                        ],
+                return SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row( 
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                    Container(
+                      width: 400,
+                      height: 300,
+                      decoration: const BoxDecoration(
+                        shape: BoxShape.circle,
+                        image: DecorationImage(image: AssetImage('image/Foto.png'))
                       ),
                     ),
-                  ),
-                  SizedBox(width: constraints.maxWidth  * 0.05,),
-                  Center(
-                    child: Expanded(
-                      child: Container(
-                        width: constraints.maxWidth * 0.2,
-                        height: constraints.maxHeight * 0.8,
-                        decoration: const BoxDecoration(
-                          image: DecorationImage(image: AssetImage('image/QRCode.png'))
+                    SizedBox(width: 20),
+                    Center(
+                      child: Expanded(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text('DIGITAL CARD',
+                            style: GoogleFonts.poppins(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 25
+                            )),
+                            const SizedBox(height: 25,),
+                            Text('Nama : Muhammad Ilham Misbakhul Anwar',
+                            style: GoogleFonts.poppins(
+                              fontWeight: FontWeight.normal,
+                              fontSize: 20
+                            ),
+                            textAlign: TextAlign.start,),
+                            const SizedBox(height: 15,),
+                            Text('Jabatan : Mahasiswa',
+                            style: GoogleFonts.poppins(
+                              fontWeight: FontWeight.normal,
+                              fontSize: 20
+                            ),
+                            textAlign: TextAlign.start,),
+                            const SizedBox(height: 15,),
+                            Text('No. HP : 085171224653',
+                            style: GoogleFonts.poppins(
+                              fontWeight: FontWeight.normal,
+                              fontSize: 20
+                            ),
+                            textAlign: TextAlign.start,),
+                            const SizedBox(height: 15,),
+                            Text('Email : ilhammisbakhul123@gmail.com',
+                            style: GoogleFonts.poppins(
+                              fontWeight: FontWeight.normal,
+                              fontSize: 20
+                            ),
+                            textAlign: TextAlign.start,),
+                            
+                          ],
                         ),
                       ),
                     ),
-                  ),
-                ],
-              );
+                    SizedBox(width: constraints.maxWidth  * 0.05,),
+                    Center(
+                      child: Expanded(
+                        child: Container(
+                          width: 300,
+                          height: 300,
+                          decoration: const BoxDecoration(
+                            image: DecorationImage(image: AssetImage('image/QRCode.png'))
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                                ),
+                );
               }
               
             }
